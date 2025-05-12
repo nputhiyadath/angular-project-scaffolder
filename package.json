@@ -1,0 +1,36 @@
+{
+  "name": "@nputhiyadath/angular-project-scaffolder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "ng-scaffold": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "chmod +x index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "CLI tool for scaffolding Angular projects with customizable dependencies",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nputhiyadath/angular-project-scaffolder"
+  },
+  "keywords": [
+    "angular",
+    "cli",
+    "scaffolding",
+    "project-generator",
+    "angular-cli"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "fs-extra": "^11.3.0",
+    "inquirer": "^9.2.12",
+    "shelljs": "^0.10.0"
+  }
+}

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  cli:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./workspace:/workspace
+    # Keep container running for multiple commands
+    stdin_open: true
+    tty: true
+    # Override entrypoint to use shell
+    entrypoint: ["/bin/sh"]
+    environment:
+      - NODE_ENV=development
+      # Add any other environment variables you might need
+    networks:
+      - scaffold-network
+
+networks:
+  scaffold-network:
+    driver: bridge
