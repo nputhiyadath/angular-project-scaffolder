@@ -6,7 +6,7 @@ A CLI tool for scaffolding Angular projects with customizable dependencies.
 
 ### NPM Global Installation
 ```bash
-npm install -g @nidhish/angular-project-scaffolder
+npm install -g @nputhiyadath/angular-project-scaffolder
 ```
 
 ### Using Docker
