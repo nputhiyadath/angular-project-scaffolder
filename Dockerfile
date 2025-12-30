@@ -9,11 +9,11 @@ WORKDIR /usr/src/app
 # Copy package files
 COPY package*.json ./
 
+# Copy source code (needed before npm install for prepare script)
+COPY . .
+
 # Install dependencies
 RUN npm install
-
-# Copy source code
-COPY . .
 
 # Make the CLI executable
 RUN chmod +x index.js
